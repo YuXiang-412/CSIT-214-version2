@@ -96,7 +96,9 @@ def api_me():
 @app.route('/api/flights')
 def api_flights():
     d = read_data()
-    return jsonify({'ok': True, 'flights': d.get('flights', [])})
+    # expose cabin price coefficients so UI can show prices per cabin class
+    cabin_price_coefs = d.get('cabin_price_coefs', {'Y': 1.0, 'J': 1.5, 'F': 2.0})
+    return jsonify({'ok': True, 'flights': d.get('flights', []), 'cabin_price_coefs': cabin_price_coefs})
 
 def compute_earned_points(d, base_miles, cabin_class, user_status):
     cabin_coef = d['flight_earnings_rules']['cabin_coefs'].get(cabin_class,1.0)
@@ -116,7 +118,11 @@ def api_buy():
     flight = next((f for f in d['flights'] if f['id']==flight_id), None)
     if not flight:
         return jsonify({'ok': False, 'error': 'flight_not_found'}), 404
-    price = flight.get('price', 0.0)
+    # compute actual price based on cabin selection
+    base_price = flight.get('price', 0.0)
+    cabin_price_coefs = d.get('cabin_price_coefs', {'Y':1.0,'J':1.5,'F':2.0})
+    coef = cabin_price_coefs.get(cabin, 1.0)
+    price = round(base_price * coef, 2)
     if user.get('balance',0) < price:
         return jsonify({'ok': False, 'error': 'insufficient_balance'}), 400
     user['balance'] -= price

@@ -2,10 +2,10 @@
   "users": {
     "alice": {
       "password": "pass",
-      "balance": 275.0,
-      "points_balance": 807,
-      "tier_points_year": 33,
-      "tier_segments_year": 6,
+      "balance": 60.0,
+      "points_balance": 1963,
+      "tier_points_year": 36,
+      "tier_segments_year": 9,
       "status": "Silver",
       "tickets": [
         {
@@ -13,7 +13,164 @@
           "price": 120.0,
           "cabin": "Y",
           "miles": 442,
-          "date": "2025-09-08T21:55:06",
+          "date": "2025-09-22T16:03:14",
+          "type": "paid",
+          "earned": 442
+        },
+        {
+          "flight_id": "F001",
+          "price": 180.0,
+          "cabin": "J",
+          "miles": 442,
+          "date": "2025-09-22T16:03:29",
+          "type": "paid",
+          "earned": 663
+        },
+        {
+          "flight_id": "F001",
+          "price": 120.0,
+          "cabin": "Y",
+          "miles": 442,
+          "date": "2025-09-22T16:32:50",
+          "type": "paid",
+          "earned": 442
+        },
+        {
+          "flight_id": "F001",
+          "price": 120.0,
+          "cabin": "Y",
+          "miles": 442,
+          "date": "2025-09-22T16:33:00",
+          "type": "paid",
+          "earned": 442
+        },
+        {
+          "flight_id": "F001",
+          "price": 120.0,
+          "cabin": "Y",
+          "miles": 442,
+          "date": "2025-09-22T16:33:13",
+          "type": "paid",
+          "earned": 442
+        },
+        {
+          "flight_id": "F001",
+          "price": 120.0,
+          "cabin": "Y",
+          "miles": 442,
+          "date": "2025-09-22T16:33:34",
+          "type": "paid",
+          "earned": 442
+        },
+        {
+          "flight_id": "F001",
+          "price": 120.0,
+          "cabin": "Y",
+          "miles": 442,
+          "date": "2025-09-22T16:34:06",
+          "type": "paid",
+          "earned": 530
+        },
+        {
+          "flight_id": "F001",
+          "price": 120.0,
+          "cabin": "Y",
+          "miles": 442,
+          "date": "2025-09-23T21:13:20",
+          "type": "paid",
+          "earned": 530
+        },
+        {
+          "flight_id": "F001",
+          "price": 120.0,
+          "cabin": "Y",
+          "miles": 442,
+          "date": "2025-09-23T21:13:26",
+          "type": "paid",
+          "earned": 530
+        }
+      ],
+      "redemptions": [
+        {
+          "ts": "2025-09-23T21:05:18",
+          "type": "gift",
+          "gift_id": "G03",
+          "name": "Coffee Voucher",
+          "points": 500
+        }
+      ],
+      "history": [
+        {
+          "ts": "2025-09-22T16:03:14",
+          "type": "earn",
+          "details": "Bought F001, earned 442 pts"
+        },
+        {
+          "ts": "2025-09-22T16:03:29",
+          "type": "earn",
+          "details": "Bought F001, earned 663 pts"
+        },
+        {
+          "ts": "2025-09-22T16:32:50",
+          "type": "earn",
+          "details": "Bought F001, earned 442 pts"
+        },
+        {
+          "ts": "2025-09-22T16:33:00",
+          "type": "earn",
+          "details": "Bought F001, earned 442 pts"
+        },
+        {
+          "ts": "2025-09-22T16:33:13",
+          "type": "earn",
+          "details": "Bought F001, earned 442 pts"
+        },
+        {
+          "ts": "2025-09-22T16:33:34",
+          "type": "earn",
+          "details": "Bought F001, earned 442 pts"
+        },
+        {
+          "ts": "2025-09-22T16:33:53",
+          "type": "upgrade",
+          "details": "Paid 2000 pts to upgrade from Base to Silver"
+        },
+        {
+          "ts": "2025-09-22T16:34:06",
+          "type": "earn",
+          "details": "Bought F001, earned 530 pts"
+        },
+        {
+          "ts": "2025-09-23T21:05:18",
+          "type": "spend",
+          "details": "Redeemed gift Coffee Voucher (-500 pts)"
+        },
+        {
+          "ts": "2025-09-23T21:13:20",
+          "type": "earn",
+          "details": "Bought F001, earned 530 pts"
+        },
+        {
+          "ts": "2025-09-23T21:13:26",
+          "type": "earn",
+          "details": "Bought F001, earned 530 pts"
+        }
+      ]
+    },
+    "bob": {
+      "password": "pass",
+      "balance": 10.0,
+      "points_balance": 7305,
+      "tier_points_year": 61,
+      "tier_segments_year": 5,
+      "status": "Silver",
+      "tickets": [
+        {
+          "flight_id": "F001",
+          "price": 120.0,
+          "cabin": "Y",
+          "miles": 442,
+          "date": "2025-09-26T09:38:03",
           "type": "paid",
           "earned": 442
         },
@@ -22,7 +179,7 @@
           "price": 350.0,
           "cabin": "Y",
           "miles": 1333,
-          "date": "2025-09-08T21:55:19",
+          "date": "2025-09-26T09:38:11",
           "type": "paid",
           "earned": 1333
         },
@@ -31,34 +188,7 @@
           "price": 120.0,
           "cabin": "Y",
           "miles": 442,
-          "date": "2025-09-08T21:58:31",
-          "type": "paid",
-          "earned": 442
-        },
-        {
-          "flight_id": "F001",
-          "price": 120.0,
-          "cabin": "Y",
-          "miles": 442,
-          "date": "2025-09-09T21:13:06",
-          "type": "paid",
-          "earned": 530
-        },
-        {
-          "flight_id": "F001",
-          "price": 120.0,
-          "cabin": "Y",
-          "miles": 442,
-          "date": "2025-09-09T21:13:23",
-          "type": "paid",
-          "earned": 530
-        },
-        {
-          "flight_id": "F001",
-          "price": 120.0,
-          "cabin": "Y",
-          "miles": 442,
-          "date": "2025-09-09T21:16:38",
+          "date": "2025-09-26T09:38:51",
           "type": "paid",
           "earned": 530
         }
@@ -66,71 +196,24 @@
       "redemptions": [],
       "history": [
         {
-          "ts": "2025-09-08T21:55:06",
+          "ts": "2025-09-26T09:38:03",
           "type": "earn",
           "details": "Bought F001, earned 442 pts"
         },
         {
-          "ts": "2025-09-08T21:55:19",
+          "ts": "2025-09-26T09:38:11",
           "type": "earn",
           "details": "Bought F003, earned 1333 pts"
         },
         {
-          "ts": "2025-09-08T21:58:31",
-          "type": "earn",
-          "details": "Bought F001, earned 442 pts"
-        },
-        {
-          "ts": "2025-09-08T21:58:46",
+          "ts": "2025-09-26T09:38:11",
           "type": "upgrade",
-          "details": "Paid 2000 pts to upgrade from Base to Silver"
+          "details": "Auto-upgraded to Silver"
         },
         {
-          "ts": "2025-09-09T21:13:06",
+          "ts": "2025-09-26T09:38:51",
           "type": "earn",
           "details": "Bought F001, earned 530 pts"
-        },
-        {
-          "ts": "2025-09-09T21:13:23",
-          "type": "earn",
-          "details": "Bought F001, earned 530 pts"
-        },
-        {
-          "ts": "2025-09-09T21:14:52",
-          "type": "spend",
-          "details": "Converted 1000 pts to $25 credit"
-        },
-        {
-          "ts": "2025-09-09T21:16:38",
-          "type": "earn",
-          "details": "Bought F001, earned 530 pts"
-        }
-      ]
-    },
-    "bob": {
-      "password": "pass",
-      "balance": 480.0,
-      "points_balance": 5442,
-      "tier_points_year": 44,
-      "tier_segments_year": 3,
-      "status": "Base",
-      "tickets": [
-        {
-          "flight_id": "F001",
-          "price": 120.0,
-          "cabin": "Y",
-          "miles": 442,
-          "date": "2025-09-10T10:30:22",
-          "type": "paid",
-          "earned": 442
-        }
-      ],
-      "redemptions": [],
-      "history": [
-        {
-          "ts": "2025-09-10T10:30:22",
-          "type": "earn",
-          "details": "Bought F001, earned 442 pts"
         }
       ]
     }
@@ -219,28 +302,49 @@
   },
   "audit": [
     {
-      "ts": "2025-09-08T21:55:06",
+      "ts": "2025-09-22T16:03:14",
       "user": "alice",
       "action": "buy",
       "flight_id": "F001",
       "earned": 442
     },
     {
-      "ts": "2025-09-08T21:55:19",
+      "ts": "2025-09-22T16:03:29",
       "user": "alice",
       "action": "buy",
-      "flight_id": "F003",
-      "earned": 1333
+      "flight_id": "F001",
+      "earned": 663
     },
     {
-      "ts": "2025-09-08T21:58:31",
+      "ts": "2025-09-22T16:32:50",
       "user": "alice",
       "action": "buy",
       "flight_id": "F001",
       "earned": 442
     },
     {
-      "ts": "2025-09-08T21:58:46",
+      "ts": "2025-09-22T16:33:00",
+      "user": "alice",
+      "action": "buy",
+      "flight_id": "F001",
+      "earned": 442
+    },
+    {
+      "ts": "2025-09-22T16:33:13",
+      "user": "alice",
+      "action": "buy",
+      "flight_id": "F001",
+      "earned": 442
+    },
+    {
+      "ts": "2025-09-22T16:33:34",
+      "user": "alice",
+      "action": "buy",
+      "flight_id": "F001",
+      "earned": 442
+    },
+    {
+      "ts": "2025-09-22T16:33:53",
       "user": "alice",
       "action": "paid_upgrade",
       "from": "Base",
@@ -248,39 +352,59 @@
       "points": 2000
     },
     {
-      "ts": "2025-09-09T21:13:06",
+      "ts": "2025-09-22T16:34:06",
       "user": "alice",
       "action": "buy",
       "flight_id": "F001",
       "earned": 530
     },
     {
-      "ts": "2025-09-09T21:13:23",
+      "ts": "2025-09-23T21:05:18",
+      "user": "alice",
+      "action": "redeem_gift",
+      "gift_id": "G03",
+      "points": 500
+    },
+    {
+      "ts": "2025-09-23T21:13:20",
       "user": "alice",
       "action": "buy",
       "flight_id": "F001",
       "earned": 530
     },
     {
-      "ts": "2025-09-09T21:14:52",
-      "user": "alice",
-      "action": "redeem_discount",
-      "points": 1000,
-      "credit": 25
-    },
-    {
-      "ts": "2025-09-09T21:16:38",
+      "ts": "2025-09-23T21:13:26",
       "user": "alice",
       "action": "buy",
       "flight_id": "F001",
       "earned": 530
     },
     {
-      "ts": "2025-09-10T10:30:22",
+      "ts": "2025-09-26T09:38:03",
       "user": "bob",
       "action": "buy",
       "flight_id": "F001",
       "earned": 442
+    },
+    {
+      "ts": "2025-09-26T09:38:11",
+      "user": "bob",
+      "action": "buy",
+      "flight_id": "F003",
+      "earned": 1333
+    },
+    {
+      "ts": "2025-09-26T09:38:11",
+      "user": "bob",
+      "action": "auto_upgrade",
+      "new_status": "Silver"
+    },
+    {
+      "ts": "2025-09-26T09:38:51",
+      "user": "bob",
+      "action": "buy",
+      "flight_id": "F001",
+      "earned": 530
     }
   ]
 }
